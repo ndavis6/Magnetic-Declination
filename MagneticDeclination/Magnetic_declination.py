@@ -590,7 +590,7 @@ class MagneticDeclination(QObject):
         #
         #settings.drawLabels = True
         pal_layer.fieldName="value"
-        pal_layer.placement=QgsPalLayerSettings.OverPoint
+        pal_layer.placement = Qgis.LabelPlacement.OverPoint
         pc.setProperty(pal_layer.Family,"Arial Black")
         pc.setProperty(pal_layer.Color, QColor(self.red, self.green, self.blue))
         pc.setProperty(pal_layer.FontSizeUnit, "MapUnit")
